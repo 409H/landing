@@ -1,0 +1,44 @@
+$flexbox-support: false;
+@import "grid-containers";
+@import "grid-columns";
+
+.container {
+    @include container;
+}
+
+.full-bleed {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-position: top center;
+    background-attachment: fixed;
+
+    @media (max-width: $columns-break-point - 1px) {
+        background-image: none;
+    }
+
+    .full-bleed-mobile {
+        display: block;
+        margin-bottom: -10px;
+        /*
+        @include responsive {
+            display: none;
+        }
+        */
+    }
+}
+
+.container,
+.row {
+    @include clearfix;
+}
+
+@if $flexbox-support == true {
+	.row {
+		@include flexbox-row;
+	}
+}
+
+@media (min-width:$columns-break-point) {
+    @include column-set;
+}

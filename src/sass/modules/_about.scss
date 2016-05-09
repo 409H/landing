@@ -1,0 +1,21 @@
+#about {
+	padding: 40px 0;
+
+	img {
+		margin-left: 15px;
+	}
+
+	.row {
+		text-align: left;
+		.columns {
+			&:first-child p {
+				margin: 15px 0 15px 15%;
+			}
+			&:last-child p{
+				margin: 15px 15% 15px 0;
+			}
+		}
+	}
+
+
+}

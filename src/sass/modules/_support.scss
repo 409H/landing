@@ -1,0 +1,19 @@
+#support {
+	margin-bottom: 40px;
+	h2 {
+		text-transform: uppercase;
+		color: $abbey;
+		font-weight: 600;
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	.supporter {
+		&.left {
+			float: right;
+		}
+		&.right {
+			float: left;
+		}
+	}
+}

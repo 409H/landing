@@ -1,0 +1,55 @@
+body {
+	background-color: $color-background;
+	background-image: url($path--rel + 'background.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: $font-family--primary;
+	font-size: $base__font-size;
+}
+
+a {
+	color: $color-primary;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 56px;
+	color: $color-secondary;	
+	&.section-heading {
+		font-size: 48px;
+		color: $abbey;
+		text-transform: uppercase;
+		letter-spacing: 15px;
+	}
+}
+
+p {
+	font-family: $font-family--secondary;
+	font-size: 16px;
+	color: $abbey;
+	line-height: 22px;
+	&.subhead {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+}
+
+a.cta {
+		font-size: 24px;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+    	content: url('../img/arrow.png');
+    	margin-left: 10px;
+    	position:absolute;
+		}
+	}
+
+section {
+	text-align: center;
+}
+
+footer {
+	background: $shark;
+}

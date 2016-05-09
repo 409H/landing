@@ -1,0 +1,80 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Asset Paths
+$path--rel      : "../img/";
+$path--rel_fonts: "../fonts/";
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic';
+
+@include font-face("Transat", $path--rel_fonts + 'Transat/Light/transat_light-webfont', 400, normal, ttf woff2 woff);
+@include font-face("Transat", $path--rel_fonts + 'Transat/Medium/transat_medium-webfont', 600, normal, ttf woff2 woff);
+@include font-face("Transat", $path--rel_fonts + 'Transat/Bold/transat_bold-webfont', 700, normal, ttf woff2 woff);
+
+$font-family--primary    : 'Transat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+$font-weight--light      : 400;
+$font-weight--medium     : 600;
+$font-weight--bold       : 700;
+
+// Descriptive colors from http://chir.ag/projects/name-that-color
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #ccd3d2;
+$tree-poppy : #F79220;
+$geyser: #dce2e5;
+$slate-gray: #6b7f88;
+$abbey: #505559;
+$shark : #26282b;
+$athens-gray: #f4f5f7;
+$mako: #3e464a;
+$dawn: #a7a6a4;
+$iron: #D0D6DA;
+$porcelain: #e8ecee;
+$oslo-gray: #979a9c;
+
+
+// Color Usage
+$color-background: $geyser;
+$color-primary   : $tree-poppy;
+$color-secondary : $slate-gray;
+$color-shadow    : rgba($black, .2);
+
+// Text
+
+$base__font-size : 14px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+$trns-duration  : .3s;
+
+// Breakpoints
+$brkpoint-xs : 1px;
+$brkpoint-sm : 480px;
+$brkpoint-md : 768px;
+$brkpoint-lg : 1100px;
+
+
+// Grid Variables
+$gutter : percentage(20px/940px); // 20px at 960px wide container, accounting for a 1/2 gutter width padding on the left and right of the container
+$one-column : 6.3829787%; // 60px at 960px wide container
+$columns-break-point: 481px !default; // set this to the minimum width you want the columns to take effect at
+$container-max-width: 1320px !default; // set this to the maximum width you want .container to have
+$flexbox-support : true !default; // set this to true to include support for CSS Flexbox (modern syntax).
+
+// a collection of the columns you want to build. the first parameter must be an integer of how many columns wide this instance is, followed by 1 or more class names to apply this width to.
+$column-list:    (2, "two") (3, "three", "one-fourth") (4, "four", "one-third") (5, "five") (6, "six", "one-half") (7, "seven") (8, "eight", "two-thirds") (9, "nine", "three-fourths") (10, "ten") (11, "eleven") (12, "twelve", "full") !default;
+
+// a collection of the offsets you want to build. the first parameter must be an integer of how many columns wide this instance is offset, followed by 1 or more class names to apply this offset to.
+$offset-list:    (1, "one") (2, "two") (3, "three") (4, "four") (5, "five") (6, "six") (7, "seven") (8, "eight") (9, "nine") (10, "ten") (11, "eleven") !default;

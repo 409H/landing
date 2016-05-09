@@ -1,0 +1,28 @@
+@import "grid-containers";
+@import "grid-columns";
+
+.container {
+    @include container;
+}
+
+.container,
+.row {
+    @include clearfix;
+}
+
+@if $flexbox-support == true {
+	.row {
+		@include flexbox-row;
+	}
+}
+
+@media (min-width:$columns-break-point) {
+    @include column-set;
+}
+
+// uncomment this section for IE support
+// html.oldie,
+// html.lt-ie9,
+// html.no-mq {
+//     @include column-set;
+// }

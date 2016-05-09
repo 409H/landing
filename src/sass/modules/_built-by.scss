@@ -1,0 +1,27 @@
+#built-by {
+	padding: 10px 0;
+	background: $athens-gray;
+	background-image: url($path--rel + 'team-bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	h2 {
+		margin: 10px 0;
+	}
+
+	.bio {
+		max-width: 360px;
+		h3 {
+			color: $mako;
+		}
+		&.left {
+			padding: 15px 35px 15px 0;
+			float: right;
+		}
+		&.right {
+			padding: 15px 0;
+			float: left;
+		}
+		
+	}
+}

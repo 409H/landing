@@ -1,0 +1,31 @@
+{
+  "name": "metamask-landing",
+  "version": "0.0.1",
+  "description": "MetaMask Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaMask/landing.git"
+  },
+  "author": "Greg Bugyis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MetaMask/landing/issues"
+  },
+  "homepage": "https://github.com/MetaMask/landing#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "del": "^2.2.0",
+    "detective": "^4.3.1",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "metamask-logo": "^1.1.5"
+  }
+}

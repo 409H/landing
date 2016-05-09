@@ -1,0 +1,30 @@
+footer {
+	p {
+		color: $iron;
+	}
+	.social-wrap {
+		text-align: center;
+		img {
+			width: 32px;
+			margin: 0 auto;
+		}
+		h3 {
+			margin: 0;
+			color: $athens-gray;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 14px;
+		}
+		.social-icon {
+			padding: 20px 5px;
+			&.left {
+				float: right;
+			}
+			&.right {
+				float: left;
+			}
+		}
+		
+	}
+}
