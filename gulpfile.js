@@ -2,7 +2,9 @@ var
 	gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	del = require('del'),
-	webserver = require('gulp-webserver');
+	webserver = require('gulp-webserver'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify')
  
 gulp.task('sass', function () {
  return gulp.src('src/sass/metamask.scss')
@@ -48,16 +50,14 @@ gulp.task('webserver', function() {
 });
 
 
-gulp.task('clean',function(){
-	del(['dist']);
+gulp.task('clean',function(cb){
+	del(['dist'], cb);
 });
 
+gulp.task('js',['minify-js']);
+gulp.task('static',['copy-fonts','copy-images']);
 
-gulp.task('build',['clean','sass'],function(){
+gulp.task('build',['clean','sass','js','static']);
+gulp.task('dev',['build','webserver']);
 
-});
-
-
-gulp.task('default',['clean'],function(){
-	gulp.start('build');
-});
+gulp.task('default',['build']);

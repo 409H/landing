@@ -23,9 +23,23 @@
     "fs": "0.0.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
-    "metamask-logo": "^1.1.5"
+    "ap": "^0.2.0",
+    "async": "^2.0.0-rc.5",
+    "browserify": "^13.0.1",
+    "copy-dir": "0.0.8",
+    "fs-extra": "^0.30.0",
+    "glob-copy": "^0.1.0",
+    "gulp-concat": "^2.6.0",
+    "metamask-logo": "^1.1.5",
+    "mississippi": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.7.0",
+    "rimraf": "^2.5.2",
+    "sass-css-stream": "^0.1.6",
+    "watchify": "^3.7.0"
   }
 }
