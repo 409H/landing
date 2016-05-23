@@ -26,5 +26,14 @@
     "rimraf": "^2.5.2",
     "sass-css-stream": "^0.1.6",
     "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "gulp-batch": "^1.0.5",
+    "gulp-browser": "^2.1.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.6",
+    "run-sequence": "^1.2.0"
   }
 }

@@ -22,7 +22,11 @@ $carousel-caption-color:                      $white;
 .carousel-inner {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 975px;
+  height: 446px;
+  background-image: url($path--rel + 'lines.png');
+  background-repeat: no-repeat;
+  margin: 0 auto;
 
   > .item {
     display: none;
@@ -34,6 +38,8 @@ $carousel-caption-color:                      $white;
     > a > img {
       //&:extend(.img-responsive);
       line-height: 1;
+      height: 424px;
+      margin-top: 12px
     }
 
     // WebKit CSS3 transforms for supported devices
@@ -105,7 +111,7 @@ $carousel-caption-color:                      $white;
 
 .carousel-control {
   position: absolute;
-  top: -92px;
+  top: -65px;
   left: 0;
   bottom: 0;
   width: $carousel-control-width;
