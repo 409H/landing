@@ -191,13 +191,15 @@
 
     <script> 
       
+      var height = $(window).height()
+
       $('.carousel').carousel({
         interval: 2000
       })
 
       $('nav').affix({
         offset: {
-          top: 600,
+          top: height - 75,
           bottom: function () {
             return (this.bottom = $('.footer').outerHeight(true))
           }

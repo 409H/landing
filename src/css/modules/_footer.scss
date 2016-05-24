@@ -1,5 +1,7 @@
 footer {
 	min-height: 135px;
+	padding-top: 20px;
+	border-bottom: 3px solid lighten($shark,10%);
 	p {
 		color: $iron;
 	}
@@ -7,7 +9,8 @@ footer {
 		margin-top: 10px;
 		p {
 			padding-left: 60px;
-			font-size: 1em;
+			font-size: 0.95em;
+			line-height: 1.4em;
 		}
 	}
 	.social-wrap {
