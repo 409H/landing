@@ -1,0 +1,44 @@
+form {
+	.form-control {
+  	display: block;
+  	border-radius: $br--default;
+  	border: 0;
+  	height: $input-height-base;
+  	padding: 0 8px;
+  	width: 100%;
+  	font-size: 1.1em;
+  }
+	button {
+		background-color: $color-primary;
+		color: $white;
+		font-size: 0.9em;
+		letter-spacing: 1.5px;
+		border-radius: $br--default;
+		text-transform: uppercase;
+		font-weight: $font-weight--bold;
+		padding: 8px 12px; 
+		border: 0;
+		height: $input-height-base + 1px;
+	}
+
+	&.form-inline {
+		margin-top: 30px;
+		.form-group {
+			display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+		}
+	}
+
+	&.subscribe {
+		margin-left: 10%;
+		.form-group {
+			float: left;
+			width: 63%;
+		}
+		button {
+			float:right;
+		}
+	}
+
+}

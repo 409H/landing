@@ -75,7 +75,7 @@ gulp.task('clean',function(cb){
 });
 
 gulp.task('watch', function () {
-    watch('**/*.scss', function (events) {
+    watch(['**/*.scss','**/*.html'], function (events) {
         runSequence('build');
     });
 });

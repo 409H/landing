@@ -1,6 +1,14 @@
 footer {
+	min-height: 135px;
 	p {
 		color: $iron;
+	}
+	.status {
+		margin-top: 10px;
+		p {
+			padding-left: 60px;
+			font-size: 1em;
+		}
 	}
 	.social-wrap {
 		text-align: center;

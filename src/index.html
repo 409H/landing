@@ -143,15 +143,19 @@
     <!-- Footer -->
     <footer class="container">
       <div class="row">
-        <div class="columns four">
+        <div class="columns four status">
           <p>Metamask is currently in alpha. We will be engaging beta-testers in the near future. Sign up below to learn more.</p>
         </div>
         <div class="columns four">
-          <p>{FORM}</p>
+          <form class="form-inline subscribe" action="#">
+            <div class="form-group">
+              <label for="emailAddress" class="hidden">Email address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="email address">
+            </div>
+            <button type="submit" class="btn btn-default">Subscribe</button>
+          </form>
         </div>
         <div class="columns four social-wrap">
-          
-
             <div class="columns four">
               <div class="social-icon left">
                 <img src="img/slack.png" alt="Slack" />

@@ -51,9 +51,14 @@ $base__font-size : 14px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
-// Border radius
 
-$br--default    : .4em;
+// Forms
+$input-padding: 12px;
+$input-height-base: $base__line + $input-padding;
+
+
+// Border radius
+$br--default    : 4px;
 $br--round      : 50%;
 
 // Transitions
