@@ -4,13 +4,15 @@ nav {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	min-height: 75px;
+	height: 0;
+	visibility: hidden;
 
 	&.affix {
 		position: fixed;
 		top: 0;
 		height: 75px;
 		z-index: 20;
+		visibility: visible;
 	}
 
 	.logo {
