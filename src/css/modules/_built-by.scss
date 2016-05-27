@@ -1,5 +1,5 @@
 #built-by {
-	padding: 10px 0;
+	padding: 20px 0 10px;
 	background: $athens-gray;
 	background-image: url($path--rel + 'team-bg.jpg');
 	background-position: center center;
@@ -13,6 +13,7 @@
 		max-width: 360px;
 		h3 {
 			color: $mako;
+			font-size: 1.5em;
 		}
 		&.left {
 			padding: 15px 35px 15px 0;
