@@ -6,7 +6,7 @@ var viewer = ModelViewer({
 
   // Dictates whether width & height are px or multiplied
   pxNotRatio: false,
-  width: 0.12,
+  width: 0.10,
   height: 0.10,
 
   // To make the face follow the mouse.
