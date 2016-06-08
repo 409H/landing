@@ -36,15 +36,34 @@ p {
 }
 
 a.cta {
-		font-size: 24px;
-		text-transform: uppercase;
-		position: relative;
+	font-size: 24px;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+	&:after {
+		background-image: url('../img/arrow-off.png');
+    background-size: 23px 27px;
+    display: inline-block;
+    width: 23px; 
+    height: 27px;
+    content:"";
+		margin-left: 10px;
+		position:absolute;
+	}
+	&.small {
 		&:after {
-    	content: url('../img/arrow.png');
-    	margin-left: 10px;
-    	position:absolute;
+			background-size: 18px 22px;
+    	width: 18px; 
+    	height: 22px;
 		}
 	}
+	&:hover {
+		color: #f76c20;
+		&:after {
+			background-image: url('../img/arrow-over.png');
+		}
+	}
+}
 
 section {
 	text-align: center;

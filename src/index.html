@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- TODO: Add favicon.ico to root dir -->
-
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn">
     <link rel="stylesheet" href="./css/bundle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
@@ -20,7 +20,7 @@
         <div id="logo-container"></div>
         <h1>Metamask</h1>
         <h2>Brings Ethereum to your browser </h2>
-        <a class="cta">Get Chrome Plugin</a>
+        <a onClick="chrome.webstore.install();" href="#" class="cta">Get Chrome Plugin</a>
     </section>
 
     <!-- Nav -->
@@ -32,7 +32,7 @@
             <h1>Metamask</h1>
           </div>
           <div class="columns six plugin-link">
-            <a class="cta">Get Chrome Plugin</a>
+            <a onClick="chrome.webstore.install();" href="#" class="cta small">Get Chrome Plugin</a>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
     <!-- About -->
     <section id="about" class="container">
       <h2 class="section-heading">About</h2>
-      <img src="img/ethereum-metamask-chrome.png" alt="Ethereum + Metamask + Chrome" />
+      <img style="" src="img/ethereum-metamask-chrome.png" alt="Ethereum + Metamask + Chrome" />
       <div class="row">
         <div class="columns six">
           <p>Metamask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node. </p>
@@ -205,6 +205,15 @@
           }
         }
       })
+
+      $('.cta').on('click touchstart',function(event){
+        event.preventDefault();
+        //https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
+      });
+      
+      if (chrome.app.isInstalled) {
+        console.log('installed');
+      }
 
     </script>
 
