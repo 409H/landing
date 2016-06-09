@@ -43,7 +43,7 @@ function buildJs(cb) {
     entries: ['./src/js/index.js'],
     cache: {},
     packageCache: {},
-    plugin: [watchify],
+    // plugin: [watchify],
   })
 
   browserify.on('update', bundle)
