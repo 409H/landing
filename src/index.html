@@ -20,7 +20,7 @@
         <div id="logo-container"></div>
         <h1>Metamask</h1>
         <h2>Brings Ethereum to your browser </h2>
-        <a onClick="chrome.webstore.install();" href="#" class="cta">Get Chrome Plugin</a>
+        <a href="https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn" onClick="chrome.webstore.install('https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn',successCallback, failureCallback);" class="cta" target="_blank">Get Chrome Plugin</a>
     </section>
 
     <!-- Nav -->
@@ -32,7 +32,7 @@
             <h1>Metamask</h1>
           </div>
           <div class="columns six plugin-link">
-            <a onClick="chrome.webstore.install();" href="#" class="cta small">Get Chrome Plugin</a>
+            <a href="https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn" onClick="chrome.webstore.install('https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn',successCallback, failureCallback);" class="cta small" target="_blank">Get Chrome Plugin</a>
           </div>
         </div>
       </div>
@@ -185,12 +185,8 @@
     <script src="./js/bundle.js"></script>
 
     <script> 
-      
       var height = $(window).height()
-
-      $('.carousel').carousel({
-        interval: 2000
-      })
+      //$('.carousel').carousel({interval: 2000})
 
       $('nav').affix({
         offset: {
@@ -199,19 +195,12 @@
             return (this.bottom = $('.footer').outerHeight(true))
           }
         }
-      })
-
-      $('.cta').on('click touchstart',function(event){
-        event.preventDefault();
-        //https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
       });
-      
-      if (chrome.app.isInstalled) {
-        console.log('installed');
+    
+      function successCallback(){}
+      function failureCallback(details) {
+        console.log(details);
       }
-
     </script>
-
-
   </body>
 </html>
