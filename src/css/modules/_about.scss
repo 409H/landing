@@ -2,11 +2,15 @@
 	padding: 40px 0;
 
 	img {
-		margin-left: 15px;
-	}
+	width: 55vw;
+	min-width: 330px;
+		}
 
 	.row {
 		text-align: left;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		.columns {
 			&:first-child p {
 				margin: 15px 0 15px 15%;

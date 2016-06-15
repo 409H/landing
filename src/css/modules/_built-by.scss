@@ -8,21 +8,28 @@
 	h2 {
 		margin: 10px 0;
 	}
-
+	.row{
+		display: flex;
+		justify-content: center;
+	}
 	.bio {
 		max-width: 360px;
+		img{
+			width: 22.5vh;
+		}
 		h3 {
 			color: $mako;
 			font-size: 1.5em;
 		}
 		&.left {
 			padding: 15px 35px 15px 0;
+			margin-left: 4px;
 			float: right;
 		}
 		&.right {
 			padding: 15px 0;
 			float: left;
 		}
-		
+
 	}
 }

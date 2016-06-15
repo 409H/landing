@@ -1,5 +1,6 @@
 #support {
 	margin-bottom: 40px;
+
 	h2 {
 		text-transform: uppercase;
 		color: $abbey;
@@ -7,7 +8,12 @@
 		font-size: 26px;
 		margin-bottom: 40px;
 	}
+	.row	{
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
 
+	}
 	.supporter {
 		&.left {
 			float: right;
