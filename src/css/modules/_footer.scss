@@ -8,13 +8,33 @@ footer {
 	.status {
 		margin-top: 10px;
 		p {
-			padding-left: 60px;
+			margin-left: 8vw;
 			font-size: 0.95em;
 			line-height: 1.4em;
 		}
 	}
+	.form-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+		form {
+			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+			page-break-inside: avoid; /* Firefox */
+			break-inside: avoid; /* IE 10+ */
+			display: flex;
+			justify-content: space-between;
+
+			button{
+				margin-left: 25px;
+			}
+		}
+	}
 	.social-wrap {
 		text-align: center;
+		display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 		img {
 			width: 32px;
 			margin: 0 auto;
@@ -36,6 +56,6 @@ footer {
 				float: left;
 			}
 		}
-		
+
 	}
 }
