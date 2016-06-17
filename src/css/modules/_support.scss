@@ -1,6 +1,11 @@
 #support {
 	margin-bottom: 40px;
+	img {
+		width: 24vw;
+		min-width: 95px;
+		max-width: 122px;
 
+	}
 	h2 {
 		text-transform: uppercase;
 		color: $abbey;
@@ -10,8 +15,8 @@
 	}
 	.row	{
 		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
+		justify-content: center;
+		align-items: center;
 
 	}
 	.supporter {
@@ -23,3 +28,5 @@
 		}
 	}
 }
+
+

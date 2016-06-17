@@ -17,6 +17,7 @@ footer {
     display: flex;
     align-items: stretch;
     flex-direction: row;
+    justify-content: center;
 		form {
 			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
 			page-break-inside: avoid; /* Firefox */

@@ -15,7 +15,9 @@
 	.bio {
 		max-width: 360px;
 		img{
-			width: 22.5vh;
+			min-width: 125px;
+			max-width: 200px;
+			width: 14.5vw;
 		}
 		h3 {
 			color: $mako;
