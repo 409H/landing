@@ -18,6 +18,7 @@
   "homepage": "https://github.com/MetaMask/landing#readme",
   "dependencies": {
     "ap": "^0.2.0",
+    "async": "^2.0.0-rc.6",
     "browserify": "^13.0.1",
     "fs": "0.0.2",
     "fs-extra": "^0.30.0",
