@@ -1,5 +1,5 @@
-
 var ModelViewer = require('metamask-logo')
+var isMobile = !!detectMobile()
 
 // To render with fixed dimensions:
 var viewer = ModelViewer({
@@ -9,17 +9,22 @@ var viewer = ModelViewer({
   width: 0.10,
   height: 0.10,
 
-  // To make the face follow the mouse.
-  followMouse: true,
-
-  // head should slowly drift (overrides lookAt)
-  slowDrift: false,
-
+  followMouse: !isMobile,
+  slowDrift: isMobile,
 })
 
 // add viewer to DOM
 var container = document.getElementById('logo-container')
 container.appendChild(viewer.canvas)
 
-// enable mouse follow
-viewer.setFollowMouse(true)
+function detectMobile() {
+  return (
+      navigator.userAgent.match(/Android/i)
+   || navigator.userAgent.match(/webOS/i)
+   || navigator.userAgent.match(/iPhone/i)
+   || navigator.userAgent.match(/iPad/i)
+   || navigator.userAgent.match(/iPod/i)
+   || navigator.userAgent.match(/BlackBerry/i)
+   || navigator.userAgent.match(/Windows Phone/i)
+  )
+}
