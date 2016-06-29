@@ -8,6 +8,7 @@ var viewer = ModelViewer({
   pxNotRatio: false,
   width: 0.10,
   height: 0.10,
+  minWidth: 200,
 
   // To make the face follow the mouse.
   followMouse: true,

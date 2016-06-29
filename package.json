@@ -22,7 +22,7 @@
     "browserify": "^13.0.1",
     "fs": "0.0.2",
     "fs-extra": "^0.30.0",
-    "metamask-logo": "^1.1.5",
+    "metamask-logo": "^1.2.0",
     "mississippi": "^1.2.0",
     "rimraf": "^2.5.2",
     "sass-css-stream": "^0.1.6",
