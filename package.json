@@ -4,7 +4,8 @@
   "description": "MetaMask Landing Page",
   "main": "index.html",
   "scripts": {
-    "start": "node build.js"
+    "start": "node build.js",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
