@@ -4,7 +4,7 @@
   "description": "MetaMask Landing Page",
   "main": "index.html",
   "scripts": {
-    "start": "node build.js",
+    "start": "node server.js",
     "build": "node build.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "fs-extra": "^0.30.0",
     "metamask-logo": "^1.2.0",
     "mississippi": "^1.2.0",
+    "node-static": "^0.7.7",
     "rimraf": "^2.5.2",
     "sass-css-stream": "^0.1.6",
     "watchify": "^3.7.0"
