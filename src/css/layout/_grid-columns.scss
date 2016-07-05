@@ -1,4 +1,4 @@
-    @mixin column() {
+@mixin column() {
     float: left;
     margin: 0 0 0 $gutter;
     width: $one-column;
