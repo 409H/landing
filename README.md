@@ -2,6 +2,13 @@
 
 To install: `npm install`
 
-To build: `node build.js`
+To build: `npm run build`
 
-Then the `src` folder will be the static assets to host.
+To serve: `npm start`
+
+To publish:
+```
+docker-compose build
+docker-compose kill
+docker-compose up -d
+```
