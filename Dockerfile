@@ -5,7 +5,7 @@ MAINTAINER kumavis
 RUN mkdir -p /www/
 WORKDIR /www/
 
-# install dependencies
+# install dependencies first (perf hack)
 COPY ./package.json /www/package.json
 RUN npm install
 
