@@ -90,6 +90,7 @@ function buildStatic(cb) {
     imgs: bind(fsExtra.copy, './src/img/', './dist/img/'),
     fonts: bind(fsExtra.copy, './src/fonts/', './dist/fonts/'),
     html: bind(fsExtra.copy, './src/index.html', './dist/index.html'),
+    goog: bind(fsExtra.copy, './src/google3bfcd95a7b5008a9.html', './dist/google3bfcd95a7b5008a9.html'),
   }, cb)
 
 }
