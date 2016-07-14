@@ -87,11 +87,12 @@ function buildCss(cb) {
 function buildStatic(cb) {
 
   async.parallel({
-    imgs:    bind(fsExtra.copy, './src/img/', './dist/img/'),
-    favicon: bind(fsExtra.copy, './src/manifest.json', './dist/manifest.json'),
-    fonts:   bind(fsExtra.copy, './src/fonts/', './dist/fonts/'),
-    html:    bind(fsExtra.copy, './src/index.html', './dist/index.html'),
-    goog:    bind(fsExtra.copy, './src/google3bfcd95a7b5008a9.html', './dist/google3bfcd95a7b5008a9.html'),
+    imgs:           bind(fsExtra.copy, './src/img/', './dist/img/'),
+    faviconAndroid: bind(fsExtra.copy, './src/manifest.json', './dist/manifest.json'),
+    faviconIE:      bind(fsExtra.copy, './src/browserconfig.xml', './dist/browserconfig.xml'),
+    fonts:          bind(fsExtra.copy, './src/fonts/', './dist/fonts/'),
+    html:           bind(fsExtra.copy, './src/index.html', './dist/index.html'),
+    goog:           bind(fsExtra.copy, './src/google3bfcd95a7b5008a9.html', './dist/google3bfcd95a7b5008a9.html'),
   }, cb)
 
 }
