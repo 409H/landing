@@ -1,4 +1,4 @@
-var 
+var
 	gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	del = require('del'),
@@ -10,8 +10,8 @@ var
   runSequence = require('run-sequence'),
   gulpBrowser = require("gulp-browser"),
 	webserver = require('gulp-webserver');
-  
-    
+
+
 gulp.task('sass', function () {
  return gulp.src('src/css/index.scss')
     .pipe(sass({
@@ -19,8 +19,8 @@ gulp.task('sass', function () {
     }))
    .pipe(rename('bundle.css'))
    .pipe(gulp.dest('dist/css/'));
-});	
- 
+});
+
 gulp.task('concat-js',function() {
 	return gulp.src([
 		'src/js/index.js',
@@ -37,7 +37,7 @@ gulp.task('minify-js',['concat-js'],function() {
 
 gulp.task('browserify',function() {
   var stream = gulp.src('src/js/index.js')
-    .pipe(gulpBrowser.browserify()) // gulp.browserify() accepts an optional array of tansforms 
+    .pipe(gulpBrowser.browserify()) // gulp.browserify() accepts an optional array of tansforms
     .pipe(rename('bundle.js'))
     .pipe(gulp.dest("./dist/js/"));
     return stream;
@@ -55,9 +55,9 @@ gulp.task('copy-fonts',function(){
 	.pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('copy-index',function(){
+gulp.task('copy-html',function(){
 	return gulp.src([
-		'src/index.html'])
+		'src/*.html'])
 	.pipe(gulp.dest('dist/'));
 });
 
@@ -81,7 +81,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('js',['browserify']);
-gulp.task('static',['copy-fonts','copy-images','copy-index']);
+gulp.task('static',['copy-fonts','copy-images','copy-html']);
 
 //gulp.task('build',['clean','sass','js','static']);
 
