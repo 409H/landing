@@ -68,7 +68,7 @@ function buildJs(cb) {
 }
 
 function buildCss(cb) {
-  
+
   async.series({
     buildCssPrep: bind(fsExtra.mkdirs, './dist/css'),
     buildCssStart: start,
@@ -91,7 +91,12 @@ function buildStatic(cb) {
     faviconAndroid: bind(fsExtra.copy, './src/manifest.json', './dist/manifest.json'),
     faviconIE:      bind(fsExtra.copy, './src/browserconfig.xml', './dist/browserconfig.xml'),
     fonts:          bind(fsExtra.copy, './src/fonts/', './dist/fonts/'),
-    html:           bind(fsExtra.copy, './src/index.html', './dist/index.html'),
+    index:          bind(fsExtra.copy, './src/index.html', './dist/index.html'),
+    privacy:        bind(fsExtra.copy, './src/privacy.html', './dist/privacy.html'),
+    terms:          bind(fsExtra.copy, './src/terms.html', './dist/terms.html'),
+    attributions:          bind(fsExtra.copy, './src/attributions.html', './dist/attributions.html'),
+
+
     goog:           bind(fsExtra.copy, './src/google3bfcd95a7b5008a9.html', './dist/google3bfcd95a7b5008a9.html'),
   }, cb)
 
