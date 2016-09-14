@@ -16,7 +16,7 @@ var viewer = ModelViewer({
 
 // add viewer to DOM
 var container = document.getElementById('logo-container')
-container.appendChild(viewer.canvas)
+container.appendChild(viewer.container)
 
 function detectMobile() {
   return (
@@ -29,3 +29,4 @@ function detectMobile() {
    || navigator.userAgent.match(/Windows Phone/i)
   )
 }
+

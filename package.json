@@ -23,7 +23,7 @@
     "browserify": "^13.0.1",
     "fs": "0.0.2",
     "fs-extra": "^0.30.0",
-    "metamask-logo": "^1.2.0",
+    "metamask-logo": "^2.0.0",
     "mississippi": "^1.2.0",
     "node-static": "^0.7.7",
     "rimraf": "^2.5.2",
