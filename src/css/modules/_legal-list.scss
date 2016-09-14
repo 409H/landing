@@ -1,0 +1,22 @@
+#legal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 14px;
+  width: 100%;
+
+  li {
+    float: left;
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
+  }
+
+  li a {
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+  }
+}
