@@ -1,22 +1,31 @@
 var ModelViewer = require('metamask-logo')
 var isMobile = !!detectMobile()
 
-// To render with fixed dimensions:
-var viewer = ModelViewer({
+injectMascot()
 
-  // Dictates whether width & height are px or multiplied
-  pxNotRatio: false,
-  width: 0.10,
-  height: 0.10,
-  minWidth: 200,
+function injectMascot(){
+  // get container from DOM
+  var container = document.getElementById('logo-container')
 
-  followMouse: !isMobile,
-  slowDrift: isMobile,
-})
+  if (!container) return
 
-// add viewer to DOM
-var container = document.getElementById('logo-container')
-container.appendChild(viewer.container)
+  // To render with fixed dimensions:
+  var viewer = ModelViewer({
+
+    // Dictates whether width & height are px or multiplied
+    pxNotRatio: false,
+    width: 0.10,
+    height: 0.10,
+    minWidth: 200,
+
+    followMouse: !isMobile,
+    slowDrift: isMobile,
+  })
+
+  // add viewer to DOM
+  container.appendChild(viewer.container)
+
+}
 
 function detectMobile() {
   return (
