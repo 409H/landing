@@ -94,7 +94,8 @@ function buildStatic(cb) {
     index:          bind(fsExtra.copy, './src/index.html', './dist/index.html'),
     privacy:        bind(fsExtra.copy, './src/privacy.html', './dist/privacy.html'),
     terms:          bind(fsExtra.copy, './src/terms.html', './dist/terms.html'),
-    attributions:          bind(fsExtra.copy, './src/attributions.html', './dist/attributions.html'),
+    phishing:       bind(fsExtra.copy, './src/phishing.html', './dist/phishing.html'),
+    attributions:   bind(fsExtra.copy, './src/attributions.html', './dist/attributions.html'),
 
 
     goog:           bind(fsExtra.copy, './src/google3bfcd95a7b5008a9.html', './dist/google3bfcd95a7b5008a9.html'),
