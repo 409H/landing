@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "node build.js",
-    "deploy": "npm run build && docker-compose pull && docker-compose build && docker-compose stop && docker-compose up -d && docker-compose logs --tail 200 -f"
+    "deploy": "npm run build && docker-compose pull && docker-compose build && docker-compose stop && docker-compose up -d && docker-compose logs --tail 200"
   },
   "repository": {
     "type": "git",
