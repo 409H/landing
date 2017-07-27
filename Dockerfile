@@ -7,13 +7,11 @@ WORKDIR /www/
 
 # install dependencies first (perf hack)
 COPY ./package.json /www/package.json
-RUN npm install
+RUN npm install --production
 
 # copy over app dir
-COPY ./ /www/
-
-# run tests
-RUN npm run build
+COPY ./dist /www/dist
+COPY ./server.js /www/
 
 # start server
 CMD npm start
