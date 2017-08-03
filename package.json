@@ -27,17 +27,17 @@
     "watchify": "^3.7.0",
     "ap": "^0.2.0",
     "async": "^2.0.0-rc.6",
-    "browserify": "^13.0.1",
+    "browserify": "^14.4.0",
     "fs": "0.0.2",
-    "fs-extra": "^0.30.0",
+    "fs-extra": "^4.0.1",
     "metamask-logo": "^2.0.0",
     "mississippi": "^1.2.0",
     "gulp-batch": "^1.0.5",
-    "gulp-browser": "^2.1.4",
+    "gulp-browser": "^3.0.6",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.3",
+    "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.6",
-    "run-sequence": "^1.2.0"
+    "run-sequence": "^2.1.0"
   }
 }
