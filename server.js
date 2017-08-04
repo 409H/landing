@@ -9,8 +9,10 @@ const server = http.createServer((request, response) => {
     fileServer.serve(request, response)
   }).resume()
 })
-server.listen(port)
-console.log('Now listening on port ' + port)
+server.listen(port, (err) => {
+  if (err) throw err
+  console.log('Now listening on port ' + port)
+})
 
 process.on('SIGTERM', () => {
   console.log('got SIGTERM')

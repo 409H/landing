@@ -14,10 +14,10 @@
 	}
 	.bio {
 		max-width: 360px;
-		img{
-			min-width: 125px;
-			max-width: 200px;
-			width: 14.5vw;
+		img {
+			width: 10vw;
+			min-width: 95px;
+			max-width: 122px;
 		}
 		h3 {
 			color: $mako;
@@ -28,16 +28,13 @@
 			margin-left: 4px;
 			float: right;
 		}
+		&.center {
+			padding: 15px 0;
+		}
 		&.right {
 			padding: 15px 0;
 			float: left;
 		}
-
 	}
-}
 
-.supporter {
-	h3 {
-		color: $mako;
-	}
 }
